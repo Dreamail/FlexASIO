@@ -18,13 +18,10 @@ WizardStyle=modern
 
 DefaultDirName={autopf}\FlexASIO
 AppendDefaultDirName=no
-ArchitecturesInstallIn64BitMode=x64
 
 [Files]
-Source:"install\x64-Release\bin\FlexASIO.dll"; DestDir: "{app}\x64"; Flags: ignoreversion regserver 64bit; Check: Is64BitInstallMode
-Source:"install\x64-Release\bin\*"; DestDir: "{app}\x64"; Flags: ignoreversion 64bit; Check: Is64BitInstallMode
-Source:"install\x86-Release\bin\FlexASIO.dll"; DestDir: "{app}\x86"; Flags: ignoreversion regserver
-Source:"install\x86-Release\bin\*"; DestDir: "{app}\x86"; Flags: ignoreversion
+Source:"install\arm64-Release\bin\FlexASIO.dll"; DestDir: "{app}\arm64"; Flags: ignoreversion regserver
+Source:"install\arm64-Release\bin\*"; DestDir: "{app}\arm64"; Flags: ignoreversion
 Source:"..\..\*.txt"; DestDir:"{app}"; Flags: ignoreversion
 Source:"..\..\*.md"; DestDir:"{app}"; Flags: ignoreversion
 Source:"..\..\*.jpg"; DestDir:"{app}"; Flags: ignoreversion
